@@ -131,6 +131,7 @@ footer {
   height: 12cm;
   padding: 48px;
   background-color: rgb(27, 27, 27);
+  background-size: cover;
   margin-bottom: 0;
   border-top: 1px solid black;
 }
@@ -258,6 +259,16 @@ nav {
     width: 200px;
   }
 
+  .footer {
+    height: 850px;
+    padding: 60px;
+    margin-bottom: 0px;
+  }
+
+  .iconosredes {
+    flex-direction: column;
+  }
+
   .gapmenu {
     gap: 30px;
   }
@@ -285,6 +296,15 @@ nav {
   iframe {
     width: 300px;
     height: 400px;
+  }
+}
+@media (min-width: 600px) {
+  .iconosredes {
+    flex-direction: row;
+  }
+
+  .footer {
+    height: 450px;
   }
 }
 @media (min-width: 992px) {
@@ -323,6 +343,10 @@ nav {
 
   nav ul {
     font-size: 22px;
+  }
+
+  .iconosredes {
+    flex-direction: row;
   }
 }
 @media (min-width: 1200px) {
