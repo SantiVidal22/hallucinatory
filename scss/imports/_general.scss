@@ -169,7 +169,6 @@ nav{
         "nav nav"
         "carru carru"
         "nosotros nosotros"
-        "ad ad"
         "footer footer";
     }
     .imgI{
@@ -185,7 +184,6 @@ nav{
         grid-template-areas: 
         "nav nav"
         "contenido contenido"
-        "ad ad"
         "footer footer";
     }
     .menu{
@@ -195,7 +193,6 @@ nav{
         grid-template-areas: 
         "nav nav"
         "galeriapizza galeriapizza"
-        "ad ad"
         "footer footer";
     }
     .nosotros{
@@ -204,7 +201,6 @@ nav{
         grid-template-areas: 
         "nav nav"
         "nosotros nosotros"
-        "ad ad"
         "footer footer";
     }
     .contactinho{
@@ -213,12 +209,7 @@ nav{
         grid-template-areas: 
         "nav nav"
         "contacto contacto"
-        "ad ad"
         "footer footer";
-    }
-    .main-contact{
-        padding: 3cm;
-        min-height: 20cm;
     }
     iframe{
         width: 380px;
@@ -232,7 +223,6 @@ nav{
         "nav nav nav"
         "carru carru carru"
         "nosotros nosotros nosotros"
-        "ad ad ad"
         "footer footer footer";
     }
     .imgI{
@@ -248,7 +238,6 @@ nav{
         grid-template-areas: 
         "nav nav"
         "galeriapizza galeriapizza"
-        "ad ad"
         "footer footer";
     }
     .nosotros{
@@ -258,7 +247,6 @@ nav{
         grid-template-areas: 
         "nav nav nav"
         "nosotros nosotros nosotros"
-        "ad ad ad"
         "footer footer footer";
     }
     .contactinho{
@@ -267,19 +255,15 @@ nav{
         grid-template-columns: 1fr 4fr 1fr;
         grid-template-areas: 
         "nav nav nav"
-        ". contacto ad"
+        "contacto contacto contacto"
         "footer footer footer";
-    }
-    .main-contact{
-        padding: 3cm;
-        min-height: 20cm;
     }
     .localizaciones{
         display: grid;
         grid-template-columns: 1fr 4fr 1fr;
         grid-template-areas: 
         "nav nav nav"
-        ". contenido ad"
+        "contenido contenido contenido"
         "footer footer footer";
     }
     nav ul{
@@ -293,7 +277,6 @@ nav{
         "nav nav nav"
         "carru carru carru"
         "nosotros nosotros nosotros"
-        "ad ad ad"
         "footer footer footer";
     }
     .gapmenu{
@@ -308,7 +291,6 @@ nav{
         grid-template-areas: 
         "nav nav nav"
         "galeriapizza galeriapizza galeriapizza"
-        "ad ad ad"
         "footer footer footer";
     }
     .localizaciones{
@@ -316,7 +298,7 @@ nav{
         grid-template-columns: 1fr 4fr 1fr;
         grid-template-areas: 
         "nav nav nav"
-        ". contenido ad"
+        "contenido contenido contenido"
         "footer footer footer";
     }
     .contactinho{
@@ -325,7 +307,7 @@ nav{
         grid-template-columns: 1fr 4fr 1fr;
         grid-template-areas: 
         "nav nav nav"
-        ". contacto ad"
+        "contacto contacto contacto"
         "footer footer footer";
     }
     .nosotros{
@@ -335,7 +317,6 @@ nav{
         grid-template-areas: 
         "nav nav nav"
         "nosotros nosotros nosotros"
-        "ad ad ad"
         "footer footer footer";
     }
 }

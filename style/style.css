@@ -43,6 +43,16 @@
   background-color: rgb(16, 73, 92);
 }
 
+.main-contact {
+  padding: 3cm;
+  display: flex;
+  justify-content: center;
+}
+
+.cont {
+  max-width: 15cm;
+}
+
 .titlecarrousel {
   font-family: "Raleway", sans-serif;
   color: white;
@@ -240,7 +250,7 @@ nav {
 @media (min-width: 400px) {
   .wrapper {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "nav nav" "carru carru" "nosotros nosotros" "ad ad" "footer footer";
+    grid-template-areas: "nav nav" "carru carru" "nosotros nosotros" "footer footer";
   }
 
   .imgI {
@@ -255,31 +265,26 @@ nav {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "nav nav" "contenido contenido" "ad ad" "footer footer";
+    grid-template-areas: "nav nav" "contenido contenido" "footer footer";
   }
 
   .menu {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "nav nav" "galeriapizza galeriapizza" "ad ad" "footer footer";
+    grid-template-areas: "nav nav" "galeriapizza galeriapizza" "footer footer";
   }
 
   .nosotros {
     gap: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "nav nav" "nosotros nosotros" "ad ad" "footer footer";
+    grid-template-areas: "nav nav" "nosotros nosotros" "footer footer";
   }
 
   .contactinho {
     gap: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "nav nav" "contacto contacto" "ad ad" "footer footer";
-  }
-
-  .main-contact {
-    padding: 3cm;
-    min-height: 20cm;
+    grid-template-areas: "nav nav" "contacto contacto" "footer footer";
   }
 
   iframe {
@@ -290,7 +295,7 @@ nav {
 @media (min-width: 992px) {
   .wrapper {
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas: "nav nav nav" "carru carru carru" "nosotros nosotros nosotros" "ad ad ad" "footer footer footer";
+    grid-template-areas: "nav nav nav" "carru carru carru" "nosotros nosotros nosotros" "footer footer footer";
   }
 
   .imgI {
@@ -305,32 +310,27 @@ nav {
   .menu {
     gap: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "nav nav" "galeriapizza galeriapizza" "ad ad" "footer footer";
+    grid-template-areas: "nav nav" "galeriapizza galeriapizza" "footer footer";
   }
 
   .nosotros {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas: "nav nav nav" "nosotros nosotros nosotros" "ad ad ad" "footer footer footer";
+    grid-template-areas: "nav nav nav" "nosotros nosotros nosotros" "footer footer footer";
   }
 
   .contactinho {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas: "nav nav nav" ". contacto ad" "footer footer footer";
-  }
-
-  .main-contact {
-    padding: 3cm;
-    min-height: 20cm;
+    grid-template-areas: "nav nav nav" "contacto contacto contacto" "footer footer footer";
   }
 
   .localizaciones {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas: "nav nav nav" ". contenido ad" "footer footer footer";
+    grid-template-areas: "nav nav nav" "contenido contenido contenido" "footer footer footer";
   }
 
   nav ul {
@@ -340,7 +340,7 @@ nav {
 @media (min-width: 1200px) {
   .wrapper {
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas: "nav nav nav" "carru carru carru" "nosotros nosotros nosotros" "ad ad ad" "footer footer footer";
+    grid-template-areas: "nav nav nav" "carru carru carru" "nosotros nosotros nosotros" "footer footer footer";
   }
 
   .gapmenu {
@@ -354,26 +354,26 @@ nav {
   .menu {
     gap: 20px;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas: "nav nav nav" "galeriapizza galeriapizza galeriapizza" "ad ad ad" "footer footer footer";
+    grid-template-areas: "nav nav nav" "galeriapizza galeriapizza galeriapizza" "footer footer footer";
   }
 
   .localizaciones {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas: "nav nav nav" ". contenido ad" "footer footer footer";
+    grid-template-areas: "nav nav nav" "contenido contenido contenido" "footer footer footer";
   }
 
   .contactinho {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas: "nav nav nav" ". contacto ad" "footer footer footer";
+    grid-template-areas: "nav nav nav" "contacto contacto contacto" "footer footer footer";
   }
 
   .nosotros {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas: "nav nav nav" "nosotros nosotros nosotros" "ad ad ad" "footer footer footer";
+    grid-template-areas: "nav nav nav" "nosotros nosotros nosotros" "footer footer footer";
   }
 }
