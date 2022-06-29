@@ -43,7 +43,6 @@ ul li a{
 html, body{
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
 }
 .localizaciones,.contactinho{
     background-image: url(../img/imgestirada.jpg);
@@ -52,6 +51,7 @@ html, body{
 }
 .wrapper, .menu{
     background-image: url(../img/wood.jpg);
+    background-size: cover;
 }
 .wrapper{
     display: grid;
@@ -162,8 +162,9 @@ nav{
 .footer{
     grid-area: footer;
 }
-@media (min-width: 400px){
+@media (min-width: 300px){
     .wrapper{
+        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "nav nav"
@@ -172,7 +173,7 @@ nav{
         "footer footer";
     }
     .imgI{
-        width: 400px;
+        width: 200px;
     }
     .gapmenu{
         gap: 30px;
@@ -180,41 +181,34 @@ nav{
     .localizaciones{
         display: grid;
         gap: 20px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas: 
-        "nav nav"
-        "contenido contenido"
-        "footer footer";
+        "nav"
+        "contenido"
+        "footer";
     }
     .menu{
         display: grid;
         gap: 20px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas: 
-        "nav nav"
-        "galeriapizza galeriapizza"
-        "footer footer";
-    }
-    .nosotros{
-        gap: 20px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "nav nav"
-        "nosotros nosotros"
-        "footer footer";
+        "nav"
+        "galeriapizza"
+        "footer";
     }
     .contactinho{
         gap: 20px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas: 
-        "nav nav"
-        "contacto contacto"
-        "footer footer";
+        "nav"
+        "contacto"
+        "footer";
     }
     iframe{
-        width: 380px;
+        width: 300px;
         height: 400px;
     }
+
 }
 @media (min-width: 992px) {
     .wrapper{
@@ -239,15 +233,6 @@ nav{
         "nav nav"
         "galeriapizza galeriapizza"
         "footer footer";
-    }
-    .nosotros{
-        display: grid;
-        gap: 20px;
-        grid-template-columns: 1fr 4fr 1fr;
-        grid-template-areas: 
-        "nav nav nav"
-        "nosotros nosotros nosotros"
-        "footer footer footer";
     }
     .contactinho{
         display: grid;
