@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+.titlecarrousel{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+.titlecarrousel3{
+    font-family: 'Raleway', sans-serif;
+    color: #c89c7d;
+    text-shadow: 1px 1px 1px black;
+}
+.pf{
+    text-shadow: 2px 2px 2px black;
+    color: rgb(255, 255, 255);
+}
+.menup{
+    height: 574px;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.h3{
+    font-family: 'BioRhyme', serif;
+}
+.carousel{
+    display: block;
+}
+.parrafos{
+    font-family: 'Lato', sans-serif;
+}
+.titulares{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 2px 2px 2px white;
+}
+ul li a{
+    font-family: 'BioRhyme', serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+.localizaciones,.contactinho{
+    background-image: url(../img/imgestirada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper, .menu{
+    background-image: url(../img/wood.jpg);
+}
+.wrapper{
+    display: grid;
+}
+nav{
+    background-color: rgb(29, 29, 29);
+    border-bottom: 1px solid black;
+}
+footer{
+    text-align: center;
+    height: 12cm;
+    padding: 48px;
+    background-color: rgb(27, 27, 27);
+    margin-bottom: 0;
+    border-top: 1px solid black;
+}
+.iconosredes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+}
+    
+.icon:hover {
+    background-color: #e60073;
+    box-shadow:  0 0 20px #e60073 ;
+}
+    
+.icon:hover:nth-child(2) {
+    background-color: #1877f2;
+    box-shadow:  0 0 20px #1877f2;
+}
+    
+.icon:hover:nth-child(3) {
+    background-color: #25d366;
+    box-shadow: 0 0 20px #25d366 ;
+}
+    
+.icon:hover:nth-child(4) {
+    background-color: #1da1f2;
+    box-shadow:  0 0 20px #1da1f2 ;
+}
+.icon i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.7rem;
+}
+svg circle {
+    stroke-dasharray: 150;
+    transition: all .8s ease-in-out;
+}
+    
+.icon:hover circle {
+    stroke-dasharray: 220;
+}
+body::-webkit-scrollbar {
+    width: 12px;             
+}
+body::-webkit-scrollbar-track {
+    background: rgb(68, 68, 68);      
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255); 
+    border-radius: 20px;      
+    border: 3px solid rgb(88, 88, 88); 
+}
+a:hover{
+    color: rgb(255, 255, 255) !important;
+}
+.searchgap{
+    gap: 20px;
+}
+.ad{
+    border: 2px solid black;
+}
+.content{
+    grid-area: contenido;
+}
+nav{
+    grid-area: nav;
+}
+.main-contact{
+    grid-area: contacto;
+}
+.padre{
+    grid-area: galeriapizza;
+}
+.ad{
+    grid-area: ad;
+}
+.carru{
+    grid-area: carru;
+}
+.nosotrosCont{
+    grid-area: nosotros;
+}
+.footer{
+    grid-area: footer;
+}
+@media (min-width: 400px){
+    .wrapper{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "nav nav"
+        "carru carru"
+        "nosotros nosotros"
+        "ad ad"
+        "footer footer";
+    }
+    .imgI{
+        width: 400px;
+    }
+    .gapmenu{
+        gap: 30px;
+    }
+    .localizaciones{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "nav nav"
+        "contenido contenido"
+        "ad ad"
+        "footer footer";
+    }
+    .menu{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "nav nav"
+        "galeriapizza galeriapizza"
+        "ad ad"
+        "footer footer";
+    }
+    .nosotros{
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "nav nav"
+        "nosotros nosotros"
+        "ad ad"
+        "footer footer";
+    }
+    .contactinho{
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "nav nav"
+        "contacto contacto"
+        "ad ad"
+        "footer footer";
+    }
+    .main-contact{
+        padding: 3cm;
+        min-height: 20cm;
+    }
+    iframe{
+        width: 380px;
+        height: 400px;
+    }
+}
+@media (min-width: 992px) {
+    .wrapper{
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: 
+        "nav nav nav"
+        "carru carru carru"
+        "nosotros nosotros nosotros"
+        "ad ad ad"
+        "footer footer footer";
+    }
+    .imgI{
+        width: 850px;
+    }
+    .img{
+        width: 200px;
+        height: 200px;
+    }
+    .menu{
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "nav nav"
+        "galeriapizza galeriapizza"
+        "ad ad"
+        "footer footer";
+    }
+    .nosotros{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: 
+        "nav nav nav"
+        "nosotros nosotros nosotros"
+        "ad ad ad"
+        "footer footer footer";
+    }
+    .contactinho{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: 
+        "nav nav nav"
+        ". contacto ad"
+        "footer footer footer";
+    }
+    .main-contact{
+        padding: 3cm;
+        min-height: 20cm;
+    }
+    .localizaciones{
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: 
+        "nav nav nav"
+        ". contenido ad"
+        "footer footer footer";
+    }
+    nav ul{
+        font-size: 22px;
+    }
+}
+@media (min-width: 1200px) { 
+    .wrapper{
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: 
+        "nav nav nav"
+        "carru carru carru"
+        "nosotros nosotros nosotros"
+        "ad ad ad"
+        "footer footer footer";
+    }
+    .gapmenu{
+        gap: 81px;
+    }
+    .imgindex{
+        height: 558px;
+    }
+    .menu{
+        gap: 20px;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: 
+        "nav nav nav"
+        "galeriapizza galeriapizza galeriapizza"
+        "ad ad ad"
+        "footer footer footer";
+    }
+    .localizaciones{
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: 
+        "nav nav nav"
+        ". contenido ad"
+        "footer footer footer";
+    }
+    .contactinho{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: 
+        "nav nav nav"
+        ". contacto ad"
+        "footer footer footer";
+    }
+    .nosotros{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: 
+        "nav nav nav"
+        "nosotros nosotros nosotros"
+        "ad ad ad"
+        "footer footer footer";
+    }
+}
