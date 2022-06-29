@@ -304,7 +304,11 @@ nav {
   }
 
   .footer {
-    height: 450px;
+    height: 500px;
+  }
+
+  .st {
+    padding: 1cm;
   }
 }
 @media (min-width: 992px) {
