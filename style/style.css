@@ -53,6 +53,11 @@
   max-width: 15cm;
 }
 
+#copyright {
+  color: white;
+  text-align: center;
+}
+
 .titlecarrousel {
   font-family: "Raleway", sans-serif;
   color: white;
@@ -102,6 +107,7 @@ ul li a {
 }
 
 html, body {
+  background-color: rgb(27, 27, 27);
   height: 100%;
   width: 100%;
 }

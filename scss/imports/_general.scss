@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+#copyright{
+    color: white;
+    text-align: center;
+}
 .titlecarrousel{
     font-family: 'Raleway', sans-serif;
     color: white;
@@ -41,6 +45,7 @@ ul li a{
     font-family: 'BioRhyme', serif;
 }
 html, body{
+    background-color: rgb(27, 27, 27);
     height: 100%;
     width: 100%;
 }
