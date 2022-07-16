@@ -399,3 +399,8 @@ nav {
     grid-template-areas: "nav nav nav" "nosotros nosotros nosotros" "footer footer footer";
   }
 }
+@media (min-width: 1920px){
+  .imgindex{
+    height: max-content;
+  }
+}
